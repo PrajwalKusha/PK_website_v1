@@ -65,6 +65,79 @@ export default function Home() {
         </motion.div>
       </section>
 
+import { Python, Ruler, Database, Cloud, ReactLogo } from "lucide-react"; // Replace with your icons or assets.
+
+const skills = [
+  {
+    category: "Programming Languages",
+    technologies: [
+      { name: "Python", icon: <Python className="w-8 h-8" /> },
+      { name: "R", icon: <Ruler className="w-8 h-8" /> },
+      { name: "HTML", icon: <i className="devicon-html5-plain colored"></i> },
+      { name: "JavaScript", icon: <i className="devicon-javascript-plain colored"></i> },
+      { name: "SQL", icon: <Database className="w-8 h-8" /> },
+    ],
+  },
+  {
+    category: "Libraries",
+    technologies: [
+      { name: "React", icon: <ReactLogo className="w-8 h-8" /> },
+      { name: "Next.js", icon: <i className="devicon-nextjs-original colored"></i> },
+      { name: "Tailwind", icon: <i className="devicon-tailwindcss-plain colored"></i> },
+      { name: "Pyspark", icon: <i className="devicon-apache-plain colored"></i> },
+      { name: "NumPy", icon: <i className="devicon-numpy-original colored"></i> },
+      { name: "Matplotlib", icon: <i className="devicon-analytics-original"></i> },
+      { name: "Scikit-learn", icon: <i className="devicon-scikit-learn-plain colored"></i> },
+      { name: "Tensor Flow", icon: <i className="devicon-tensorflow-original"></i> },
+    ],
+  },
+  {
+    category: "Visualization Tools",
+    technologies: [
+      { name: "SAS", icon: <i className="devicon-sas-original colored"></i> },
+      { name: "Power BI", icon: <i className="devicon-powerbi-plain colored"></i> },
+      { name: "Tableau", icon: <i className="devicon-tableau-original"></i> },
+    ],
+  },
+  {
+    category: "Databases & Cloud Technologies",
+    technologies: [
+      { name: "MySQL", icon: <i className="devicon-mysql-plain colored"></i> },
+      { name: "PostgreSQL", icon: <i className="devicon-postgresql-plain colored"></i> },
+      { name: "AWS", icon: <i className="devicon-amazonwebservices-original colored"></i> },
+      { name: "Google Cloud", icon: <Cloud className="w-8 h-8" /> },
+    ],
+  },
+];
+
+export default function SkillsSection() {
+  return (
+    <section id="skills" className="py-20 bg-muted">
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-bold mb-12 text-center">Technical Skills</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {skills.map((skillCategory) => (
+            <div key={skillCategory.category}>
+              <h3 className="text-2xl font-semibold mb-4">{skillCategory.category}</h3>
+              <div className="flex flex-wrap gap-4">
+                {skillCategory.technologies.map((tech) => (
+                  <div
+                    key={tech.name}
+                    className="flex items-center space-x-2 bg-card p-4 rounded-lg shadow-md"
+                  >
+                    {tech.icon}
+                    <span className="text-lg">{tech.name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+      
       {/* Education Section */}
       <section id="education" className="py-20">
         <motion.div
