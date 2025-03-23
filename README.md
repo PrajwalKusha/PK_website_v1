@@ -36,5 +36,48 @@ This portfolio was built with modern, scalable, and responsive technologies:
 ---
 
 ## 📦 Project Structure
-PK_website_v1/ ├── app/ # Route handlers and pages (Next.js App Router) │ └── layout.tsx # Root layout and theming │ └── page.tsx # Landing page │ └── about/ # About section routing │ └── projects/ # Projects section routing │ └── contact/ # Contact form or CTA │ ├── components/ # Reusable UI components (Navbar, Cards, Buttons, etc.) ├── public/ # Static assets (images, favicons, resume.pdf) ├── lib/ # Custom hooks, utilities, and helpers ├── styles/ # Tailwind CSS configuration │ └── globals.css # Base styles │ ├── .gitignore ├── README.md ├── LICENSE ├── package.json ├── tailwind.config.ts ├── postcss.config.js └── tsconfig.json
+
+```bash
+PK_website_v1/
+├── app/                  # Route handlers and pages (Next.js App Router)
+│   ├── layout.tsx        # Root layout and theming
+│   ├── page.tsx          # Landing page
+│   ├── about/            # About section route
+│   ├── projects/         # Projects showcase route
+│   └── contact/          # Contact form or CTA
+│
+├── components/           # Reusable UI components (Navbar, Cards, Buttons, etc.)
+├── public/               # Static assets (resume, images, favicons)
+├── lib/                  # Utility functions and custom hooks
+├── styles/               # Tailwind base styling
+│   └── globals.css
+│
+├── .gitignore
+├── README.md
+├── LICENSE
+├── package.json
+├── postcss.config.js
+├── tailwind.config.ts
+└── tsconfig.json
+
+
+---
+
+## 🛠️ Getting Started Locally
+
+To run this project on your local machine:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/PrajwalKusha/PK_website_v1.git
+cd PK_website_v1
+
+# 2. Install dependencies
+npm install
+
+# 3. Run the development server
+npm run dev
+
+# 4. Open in your browser
+http://localhost:3000
 
