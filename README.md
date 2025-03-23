@@ -59,7 +59,7 @@ PK_website_v1/
 ├── postcss.config.js
 ├── tailwind.config.ts
 └── tsconfig.json
-
+```
 
 ---
 
@@ -80,4 +80,30 @@ npm run dev
 
 # 4. Open in your browser
 http://localhost:3000
+```
+---
+
+## 🪪 License
+
+This project is licensed under the **MIT License**.  
+See the [LICENSE](./LICENSE) file for full details.
+
+---
+
+## 🙌 Reuse & Attribution
+
+You're welcome to **fork**, **remix**, or use this project as inspiration for your own portfolio or developer site.
+
+> ✨ All I ask is that you **credit me** by linking back to [https://prajwalkusha.vercel.app](https://prajwalkusha.vercel.app) or this repo.  
+> Sharing is cool. Giving credit is cooler. 😎
+
+---
+
+## 💬 Let’s Connect
+
+I love collaborating, building smart systems, and swapping thoughts on tech, TV, and games.
+
+- 🌐 [Portfolio](https://prajwalkusha.vercel.app)
+- 🧑‍💼 [LinkedIn](https://linkedin.com/in/prajwalkusha)
+- 🐙 [GitHub](https://github.com/PrajwalKusha)
 
