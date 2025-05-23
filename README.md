@@ -14,7 +14,7 @@ This portfolio was built with modern, scalable, and responsive technologies:
 - **Framework:** [Next.js](https://nextjs.org/)
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/)
 - **Animations:** [Framer Motion](https://www.framer.com/motion/)
-- **UI Components:** [ShadCN UI](https://ui.shadcn.com/)
+- **UI Components:** [ShadCN UI](https://ui.shadcn.com/),[Aceternity UI](https://ui.aceternity.com/)
 - **Icons:** [Lucide Icons](https://lucide.dev/)
 - **State & Hooks:** React, Typewriter Effect
 - **Hosting:** [Vercel](https://vercel.com/)
