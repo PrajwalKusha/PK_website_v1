@@ -7,9 +7,11 @@ import { BackToTop } from '@/components/back-to-top'
 import { ThemeProvider } from '@/components/theme-provider'
 import { Background } from '@/components/background'
 import { LoadingScreen } from '@/components/loading-screen'
+import { MigrationBanner } from '@/components/migration-banner'
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ['latin'] })
-const montserrat = Montserrat({ 
+const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-montserrat',
 })
@@ -36,6 +38,7 @@ export default function RootLayout({
           <LoadingScreen>
             <Background />
             <div className="relative z-10 flex min-h-screen flex-col">
+              <MigrationBanner />
               <Navbar className="bg-background/30 hover:bg-background/50 transition-colors duration-200" />
               <main className="flex-grow backdrop-blur-[2px]">
                 <div className="relative">
@@ -46,6 +49,7 @@ export default function RootLayout({
               <BackToTop />
             </div>
           </LoadingScreen>
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
